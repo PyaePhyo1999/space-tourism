@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [](https://github.com/PyaePhyo1999/space-tourism)
-- Live Site URL: [](https://ppmspacetourism.netlify.app/)
+- Solution URL: [solution url](https://github.com/PyaePhyo1999/space-tourism)
+- Live Site URL: [live site url](https://ppmspacetourism.netlify.app/)
 
 ## My process
 I try to used React+vite and scss from what I've learned from the -mentor. 
