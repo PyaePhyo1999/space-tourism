@@ -1,0 +1,90 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&family=Barlow:wght@400;700&family=Barlow+Condensed:wght@400;700&display=swap');
+
+/* Font Preset Variables */
+:root {
+  /* Base Text Presets */
+  --text-preset-1: 400 12px/normal 'Bellefair', sans-serif;
+  --text-preset-5: 400 12px/normal 'Barlow Condensed', sans-serif;
+  --text-preset-8-bold: 700 12px/normal 'Barlow Condensed', sans-serif;
+  --text-preset-9: 400 12px/180% 'Barlow', sans-serif;
+
+  /* Desktop Text Presets */
+  --desktop-text-preset-1: 400 144px/normal 'Bellefair', sans-serif;
+  --desktop-text-preset-2: 400 96px/normal 'Bellefair', sans-serif;
+  --desktop-text-preset-3: 400 56px/normal 'Bellefair', sans-serif;
+  --desktop-text-preset-4: 400 32px/normal 'Bellefair', sans-serif;
+  --desktop-text-preset-5: 400 28px/normal 'Barlow Condensed', sans-serif;
+  --desktop-text-preset-6: 400 28px/normal 'Bellefair', sans-serif;
+  --desktop-text-preset-7: 400 14px/normal 'Barlow Condensed', sans-serif;
+  --desktop-text-preset-8: 400 16px/normal 'Barlow Condensed', sans-serif;
+  --desktop-text-preset-8-bold: 700 16px/normal 'Barlow Condensed', sans-serif;
+  --desktop-text-preset-9: 400 18px/180% 'Barlow', sans-serif;
+
+  /* Tablet Text Presets */
+  --tablet-text-preset-2: 400 80px/normal 'Bellefair', sans-serif;
+  --tablet-text-preset-3: 400 40px/normal 'Bellefair', sans-serif;
+  --tablet-text-preset-4: 400 24px/normal 'Bellefair', sans-serif;
+  --tablet-text-preset-5: 400 20px/normal 'Barlow Condensed', sans-serif;
+  --tablet-text-preset-9: 400 16px/180% 'Barlow', sans-serif;
+
+  /* Mobile Text Presets */
+  --mobile-text-preset-1: 400 80px/normal 'Bellefair', sans-serif;
+  --mobile-text-preset-2: 400 56px/normal 'Bellefair', sans-serif;
+  --mobile-text-preset-3: 400 24px/normal 'Bellefair', sans-serif;
+  --mobile-text-preset-4: 400 18px/normal 'Bellefair', sans-serif;
+  --mobile-text-preset-6: 400 16px/normal 'Barlow Condensed', sans-serif;
+  --mobile-text-preset-8: 400 14px/normal 'Barlow Condensed', sans-serif;
+  --mobile-text-preset-9: 400 15px/180% 'Barlow', sans-serif;
+
+
+  /* color */
+
+
+  /* navigation */
+  --color-nav-background: rgba(255, 255, 255, 0.1);
+  --color-nav-text:#FFFFFF;
+  --color-line: #979797;
+  --color-text: #D0D6F9;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#title{
+    padding: 0 128px;
+    padding-top: 48px;
+    font: var(--desktop-text-preset-5);
+    text-transform: uppercase;
+    color: var(--color-nav-text);
+    letter-spacing: 2px;
+}
+
+#title span{
+    font-weight: 500;
+    font: bold;
+    opacity: 25%;
+    text-transform: uppercase;
+    margin-right: 24px;
+}
+
+@media(min-width:768px) and (max-width:1024px) {
+    #title{
+    padding-top: 20px;
+    font: var(--tablet-text-preset-5);
+  
+}
+}
+
+@media(max-width:768px) {
+    #title{       
+    text-align: center;
+    padding: 20px;
+    font: var(--mobile-text-preset-6);
+  
+}
+}

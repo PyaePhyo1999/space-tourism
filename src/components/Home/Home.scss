@@ -1,0 +1,151 @@
+
+.home {
+    position: relative;
+    width: 100%;
+    background-image: url('/src/assets/home/background-home-desktop.jpg');
+    background-position: center;
+    height: 100vh;
+    background-size: cover;
+}
+
+.home__container {
+    height: 100%;
+    flex: 1;
+    padding-top: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+
+.home__{
+    position: absolute;
+    bottom: 0;
+    padding: 128px;
+    display: flex;
+    align-items: center;
+}
+
+.home__content{
+    flex-basis: 50%;
+}
+
+.home__content h3{
+    font: var(--desktop-text-preset-5);
+    text-transform: uppercase;
+    color: var(--color-text);
+}
+.home__content h1{
+    font: var(--desktop-text-preset-1);
+    text-transform: uppercase;
+    color: white;
+}
+.home__content p{
+    font: var(--desktop-text-preset-9);
+    color: var(--color-text);
+}
+
+
+
+.btn__hero{
+    flex-basis: 50%;
+    display: flex;
+    justify-content:end;
+}
+
+.btn__hero button{
+    width: 272px;
+    height: 272px;
+    background: white;
+    border: none;
+    border-radius: 50%;
+    font: var(--desktop-text-preset-4);
+}
+
+@media(min-width:768px) and (max-width:1024px) {
+
+.home {
+    background-image: url('/src/assets/home/background-home-tablet.jpg');
+}
+
+
+.home__container {
+    padding-top: 0;
+}
+
+.home__{
+    position: relative;
+    padding:40px 128px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home__content{
+   text-align: center;
+}
+
+.home__content h3{
+    margin-top: 24px;
+    font: var(--tablet-text-preset-5);
+}
+.home__content h1{
+    margin: 24px 0;
+    font: var(--tablet-text-preset-2);
+
+}
+.home__content p{
+    font: var(--tablet-text-preset-9);
+}
+
+.btn__hero button{
+   margin-top: 20px;
+}
+
+}
+
+@media(max-width:768px){
+.home {
+    background-image: url('/src/assets/home/background-home-mobile.jpg');
+}
+
+
+.home__container {
+    padding-top: 32px;
+}
+
+.home__{
+    position: relative;
+    padding: 24px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home__content{
+   text-align: center;
+}
+.home__content h3{
+    padding-top: 24px;
+    font: var(--mobile-text-preset-5);
+}
+.home__content h1{
+    padding: 24px 0;
+    font: var(--mobile-text-preset-1);
+
+}
+
+.home__content p{
+    font: var(--mobile-text-preset-9);
+
+}
+
+.btn__hero button{
+    margin-top: 24px;
+    width: 144px;
+    height: 144px;
+    background: white;
+    border: none;
+    border-radius: 50%;
+    font: var(--mobile-text-preset-4);
+}
+}

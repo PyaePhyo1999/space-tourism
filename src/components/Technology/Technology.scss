@@ -1,0 +1,204 @@
+.tech{
+    position: relative;
+    width: 100%;
+    background-image: url('/src/assets/technology/background-technology-desktop.jpg');
+    background-position: center;
+    height: 100vh;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.tech__container {
+    flex: 1;
+    padding-top: 40px;
+    z-index: 1;
+}
+
+.tech__ {
+    padding-left: 128px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.tech__content{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.tech__brief__content{
+    padding: 0 60px;
+}
+.tech__brief__content h3{
+    font: var(--desktop-text-preset-4);
+    text-transform: uppercase;
+    color: var(--color-nav-text);
+    opacity: 50%;
+}
+.tech__brief__content h1{
+    padding: 14px 0;
+    font: var(--desktop-text-preset-3);
+    text-transform: uppercase;
+    color: var(--color-nav-text);
+}
+.tech__brief__content p{
+    max-width: 400px;
+    font: var(--text-preset-9);
+    color: var(--color-text);
+}
+
+.tech__brief__tab{
+    flex-direction: column;
+    display: flex;
+    gap: 30px;
+}
+
+.tech__brief__tab button{
+    background: transparent;
+    border: 1px solid var(--color-nav-text);
+    position: relative;
+    padding-bottom:12px;
+    font: var(--desktop-text-preset-4);
+    color: var(--color-nav-text);
+    padding: 6px 16px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.tech__brief__tab button:hover,
+.tech__brief__tab button.active,
+.tech__brief__tab button.active::after{
+   background: var(--color-nav-text);
+   color: black;
+}
+
+.tech__hero img{
+
+    height: 450px;
+}
+
+
+@media(min-width:768px) and (max-width:1024px) {
+.tech{
+    background-image: url('/src/assets/technology/background-technology-tablet.jpg');
+}
+
+.tech__container {
+    padding-top: 0;
+}
+
+.tech__ {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.tech__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.tech__brief__content{
+    text-align: center;
+    margin-top: 20px;
+}
+.tech__brief__content h3{
+    font: var(--tablet-text-preset-4);
+    text-transform: uppercase;
+    opacity: 50%;
+}
+.tech__brief__content h1{
+    padding: 14px 0;
+    font: var(--tablet-text-preset-3);
+}
+.tech__brief__content p{
+    max-width: 100%;
+    font: var(--tablet-text-preset-9);
+
+}
+
+.tech__brief__tab{
+    flex-direction: row;
+}
+
+.tech__brief__tab button{
+    padding-bottom:0;
+    padding: 4px 16px;
+}
+
+
+.tech__hero img{
+    margin-top: 40px;
+    width: 100%;
+    height: 250px;
+}
+
+}
+
+
+@media(max-width:768px){
+.tech{
+    background-image: url('/src/assets/technology/background-technology-mobile.jpg');
+}
+
+.tech__container {
+    padding-top: 32px;
+}
+
+.tech__ {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.tech__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.tech__brief__content{
+    padding: 24px;
+    text-align: center;
+}
+.tech__brief__content h3{
+    font: var(--mobile-text-preset-4);
+    text-transform: uppercase;
+    color: var(--color-nav-text);
+    opacity: 50%;
+}
+.tech__brief__content h1{
+    padding: 14px 0;
+    font: var(--mobile-text-preset-3);
+}
+.tech__brief__content p{
+    max-width: 100%;
+    font: var(--mobile-text-preset-9);
+}
+
+.tech__brief__tab{
+    flex-direction: row;
+}
+
+.tech__brief__tab button{
+    padding-bottom:0;
+    font: var(--mobile-text-preset-4);
+    padding: 6px 12px;
+}
+
+
+.tech__hero img{
+    margin-top: 10px;
+    margin-bottom: -10px;
+    width: 100%;
+    height: 200px;
+}
+
+}
